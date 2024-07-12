@@ -21,24 +21,28 @@
         </script>
 
         <style>
-            .image-container {
-                width: 100%;
-                height: auto;
-                text-align: center; /* Центрировать изображение */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
             }
-
-            .image-container img {
-                max-width: 100%; /* Масштабировать изображение, чтобы оно не выходило за пределы контейнера */
-                height: auto; /* Сохранять соотношение сторон изображения */
-            }
+            
+            body {
+                background-image: url('bg_registration.png');
+                background-size: cover; /* Масштабируем изображение, чтобы оно полностью заполнило элемент */
+                background-position: center; /* Центрируем изображение */
+                background-repeat: no-repeat; /* Изображение не повторяется */
+                /* height: 100vh; Высота body равна высоте окна браузера */
+                /* width: 100vw; Ширина body равна ширине окна браузера */
+        }
         </style>
     </head>
 
     <body>
 
-        <div class="image-container">
+        <!-- <div class="image-container">
             <img src="bg_registration.png" alt="Local Image">
-        </div>
+        </div> -->
 
     </body>
 
