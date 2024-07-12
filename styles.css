@@ -36,6 +36,10 @@ body, html {
     border-radius: 5px;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF0D; /* Set the background color with transparency */
+    color: white; /* Set text color for better readability */
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 /* Adjust padding for smaller screens */
