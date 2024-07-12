@@ -19,15 +19,27 @@
             Telegram.WebApp.onEvent('themeChanged', setThemeClass);
             setThemeClass();
         </script>
+
+        <style>
+            .image-container {
+                width: 100%;
+                height: auto;
+                text-align: center; /* Центрировать изображение */
+            }
+
+            .image-container img {
+                max-width: 100%; /* Масштабировать изображение, чтобы оно не выходило за пределы контейнера */
+                height: auto; /* Сохранять соотношение сторон изображения */
+            }
+        </style>
     </head>
 
-    <body class="">
-        <div class="container">
-            <img
-                src="https://cdn.dribbble.com/users/1217613/screenshots/3866417/media/ba180f6368675cdf9b63e972903594ba.gif"
-                alt="GIF"
-                class="gif"
-            >
+    <body>
+
+        <div class="image-container">
+            <img src="bg_registration.png" alt="Local Image">
         </div>
+
     </body>
+
 </html>
