@@ -53,7 +53,7 @@ body, html {
 .reg_input::placeholder {
     color: #f0f0f0; 
     opacity: 1;  
-  }
+}
 
 /* Adjust padding for smaller screens */
 @media (max-width: 600px) {
@@ -69,7 +69,6 @@ body, html {
         padding: 8px;
     }
 }
-
 
 .purple_button {
     margin-top: 20px;
@@ -89,9 +88,57 @@ body, html {
 }
 
 .purple_button:hover {
-    background-color: #993399; /* Темнее фиолетовый при наведении */
+    background-color: #993399; /* Фиолетовый при наведении (темнее) */
 }
 
 .bg_screen_dark {
     background-color: #1f1f1f;
+}
+
+
+
+
+
+    .input-field:focus {
+        border: 1px;
+        box-shadow: 0 0 0 2px #C036F1; /* Фиолетовая подсветка при фокусе */
+        border-color: #C036F1;  /* Цвет подсветки при фокусе */
+    }
+
+
+.reg_bg_default {
+    background-color: #1f1f1f;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    box-sizing: border-box;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.bottom-container {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.reg_h2 {
+    margin: 1em;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
 }
