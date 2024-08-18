@@ -1,5 +1,5 @@
 .reg_bg_image {
-    background-image: url('./bg_registration.png');
+    background-image: url('../../ui-kit/resourses/images/bg_registration.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

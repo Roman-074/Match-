@@ -1,5 +1,4 @@
 import {REG_SCREENS} from "../../../app/screens.js";  
-// import '../../../ui-kit/styles/app_styles.css';
 
 const link = document.createElement("link");
 link.rel = 'stylesheet';
