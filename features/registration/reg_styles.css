@@ -13,12 +13,7 @@
     box-sizing: border-box; /* Учитываем отступы и границы в общей ширине и высоте */
 }
 
-body, html {
-    margin: 0; /* Убираем отступы у body и html */
-    height: 100%; /* Устанавливаем высоту на 100% */
-}
-
-.reg_bg_card {
+.blur_card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     border-radius: 24px;
@@ -32,124 +27,9 @@ body, html {
     box-sizing: border-box; 
 }
 
-.reg_h1 {
-    margin: 1em;
-    color: #fff;
-    font-size: 24px;
-}
-
-.reg_input {
-    width: 100%;
-    padding: 16px; /* Уменьшите внутренние отступы для мобильных */
-    border-radius: 16px;
-    border: none;
-    background-color: #2a2a2a;
-    color: white;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-/* .reg_input {
-    width: 100%;
-    padding: 20px;
-    border-radius: 16px;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #2a2a2a;
-    color: white;
-    font-size: 16px;
-    box-sizing: border-box;
-} */
-
-.reg_input::placeholder {
-    color: #f0f0f0; 
-    opacity: 1;  
-}
-
 /* Adjust padding for smaller screens */
 @media (max-width: 600px) {
-    .reg_bg_card {
+    .blur_card {
         padding: 15px;
     }
-
-    .reg_h1 {
-        font-size: 20px;
-    }
-
-    .reg_input {
-        padding: 8px;
-    }
-}
-
-.purple_button {
-    margin-top: 20px;
-    width: 100%;
-    background-color: #C036F1; /* Фиолетовый цвет фона */
-    color: #f0f0f0; /* Белый цвет текста */
-    padding: 20px 20px; /* Внутренние отступы для кнопки */
-    border: none; /* Без границ */
-    border-radius: 16px; /* Закругленные углы */
-    cursor: pointer; /* Курсор в виде указателя при наведении */
-    font-size: 16px; /* Размер шрифта */
-    font-weight: bold; /* Жирный шрифт */
-    text-align: center; /* Центрирование текста */
-    text-decoration: none; /* Убираем подчеркивание */
-    display: inline-block; /* Inline-block для кнопки */
-    transition: background-color 0.3s ease; /* Плавный переход для фона */
-}
-
-.purple_button:hover {
-    background-color: #993399; /* Фиолетовый при наведении (темнее) */
-}
-
-.bg_screen_dark {
-    background-color: #1f1f1f;
-}
-
-
-
-
-
-    .input-field:focus {
-        border: 1px;
-        box-shadow: 0 0 0 2px #C036F1; /* Фиолетовая подсветка при фокусе */
-        border-color: #C036F1;  /* Цвет подсветки при фокусе */
-    }
-
-
-.reg_bg_default {
-    background-color: #1f1f1f;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0; /* Убираем отступы */
-    padding: 0; /* Убираем внутренние отступы */
-    box-sizing: border-box;
-}
-
-.top-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 300px;
-    margin-top: 20px;
-}
-
-.bottom-container {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 20px;
-}
-
-.reg_h2 {
-    margin: 1em;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
 }

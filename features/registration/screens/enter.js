@@ -1,13 +1,19 @@
-import {REG_SCREENS} from "../../../app/screens.js"  
+import {REG_SCREENS} from "../../../app/screens.js";  
+// import '../../../ui-kit/styles/app_styles.css';
+
+const link = document.createElement("link");
+link.rel = 'stylesheet';
+link.href = "../../../ui-kit/styles/app_styles.css";
+document.head.appendChild(link);
 
 var EnterScreen = {
     view: function() {
         // Фон-картинка
         return m("div.reg_bg_image", [
             // Карточка с блюром
-            m("div.reg_bg_card", [
+            m("div.blur_card", [
                 // Заголовок
-                m("h1.reg_h1", "Зарегистрироваться или войти"),
+                m("h1.h1_text", "Зарегистрироваться или войти"),
                 // Инпут
                 m("input.reg_input", {
                         type: "tel",

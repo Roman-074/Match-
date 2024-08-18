@@ -1,0 +1,42 @@
+@import url("./button_styles.css");
+@import url("./text_styles.css");
+@import url("./input_styles.css");
+
+body, html {
+    margin: 0; /* Убираем отступы у body и html */
+    height: 100%; /* Устанавливаем высоту на 100% */
+}
+
+.bg_dark_default {
+    background-color: #1f1f1f;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    box-sizing: border-box;
+}
+
+.bg_screen_dark {
+    background-color: #1f1f1f;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.bottom-container {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}

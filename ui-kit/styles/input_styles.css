@@ -1,0 +1,28 @@
+.reg_input {
+    width: 100%;
+    padding: 16px; /* Уменьшите внутренние отступы для мобильных */
+    border-radius: 16px;
+    border: none;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px; 
+    box-sizing: border-box;
+}
+
+.reg_input::placeholder {
+    color: #f0f0f0; 
+    opacity: 1;  
+}
+
+.input-field:focus {
+    border: 1px;
+    box-shadow: 0 0 0 2px #C036F1; /* Фиолетовая подсветка при фокусе */
+    border-color: #C036F1;  /* Цвет подсветки при фокусе */
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 600px) {
+    .reg_input {
+        padding: 8px;
+    }
+}

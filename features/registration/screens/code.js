@@ -3,12 +3,12 @@ import {REG_SCREENS} from "../../../app/screens.js"
 // Компонент экрана для ввода SMS-кода
 var SmsCodeScreen = {
     view: function() {
-        return m("div.reg_bg_default", [
+        return m("div.bg_dark_default", [
             // Верхняя часть экрана
             m("div.top-container", [
                 // Заголовок
                 m("div", { style: { marginTop: "20px", textAlign: "center" } }, [
-                    m("p.reg_h2", "Введи код отправленный \nна номер +7 999 999 99 99")
+                    m("p.h2_text", "Введи код отправленный \nна номер +7 999 999 99 99")
                 ]),
 
                 // Поля ввода для кода из SMS
@@ -24,7 +24,7 @@ var SmsCodeScreen = {
             m("div.bottom-container", [
                 // Текст "Изменить номер"
                 m("div", { style: { textAlign: "center" } }, [
-                    m("a.reg_h2", "Изменить номер")
+                    m("a.h2_text", "Изменить номер")
                 ]),
 
                 // Кнопка "Далее"
@@ -38,7 +38,6 @@ var SmsCodeScreen = {
     }
 };
 
-
 // Функция для получения атрибутов инпута
 function getInputAttributes(inputRefs) {
     return {
@@ -49,7 +48,6 @@ function getInputAttributes(inputRefs) {
         oninput: (e) => handleInput(e, inputRefs)
     };
 }
-
 
 // Обработчик ввода текста
 function handleInput(e, inputRefs) {
@@ -65,6 +63,7 @@ function handleInput(e, inputRefs) {
     }
 }
 
+// TODO 
 var inputStyle = {
     width: "68px",
     height: "100px",
